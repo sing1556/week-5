@@ -1,0 +1,98 @@
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section{
+    border: 1px solid #999;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+}
+
+.b1{
+    background-color: aqua;
+}
+
+.b2{
+    background-color: bisque;
+}
+
+.b3{
+    background-color: darkcyan;
+}
+
+.b4{
+    background-color: brown;
+}
+
+/* ------------------------------------------------
+           CSS Transition
+   ------------------------------------------------  */
+
+   .transition .b1{
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .5s;
+    /* transition: all 1s ease-in-out .5s; */
+   }
+
+   .transition .b1:hover{
+       width: 400px;
+       height: 300px;
+   }
+
+   .transition .b2{
+       transition: width 1s, height .5s;
+       transition-timing-function: ease-out;
+       transition-delay: .5s;
+   }
+
+   .transition .b2:hover{
+       width: 250px;
+       height: 250px;
+   }
+
+   .transition .b3{
+       transition: transform 1s cubic-bezier(.51, -0.38, .52, 1.46) 0.5s;
+   }
+
+   .transition .b3:hover{
+       transform: rotate(80deg);
+   }
+
+   .transition .b4{
+       transition: all 1s ease-in;
+   }
+
+   .transition .b4:hover{
+       background-color: deeppink;
+       border-radius: 30px;
+   }
+
+   /* ------------------------------------------------
+           CSS Transform
+   ------------------------------------------------  */
+
+   .transform .b1:hover{
+       transform: translate(20px, 30px);
+   }
+
+   .transform .b2:hover{
+       transform: scale(1.2, 1.2);
+   }
+
+   .transform .b3{
+       transform: rotate(45deg);
+       transform-origin: right bottom;
+   }
+
+   .transform .b4{
+       /* transform: skewX(45deg) skewY(15deg) */
+       transform: skew(45deg, 15deg) scale(.5) rotate(45deg);
+   }
