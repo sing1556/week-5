@@ -156,7 +156,7 @@ transition-delay: .5s;
 .animation .b3{
     animation-name: transformMe;
     animation-duration: 1.5s;
-    animation-iteration-count: 8;
+    animation-iteration-count: 7;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
 }
